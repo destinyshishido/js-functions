@@ -326,6 +326,11 @@ console.log(allCaps('i believe i can fly'));
  * Console.log your result.
 */
 
+function oneCap(str){
+	 return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+console.log(oneCap('yes'));
 
 /*
  * #17
@@ -353,13 +358,13 @@ console.log(canDrink);
  */
 
 function throwParty(canDrink){
-	if (true) {
+	if (canDrink) {
 		return 'Cheee Hoo! We going to da party!'
 	} else {
 		return 'Meh, see you at Starbucks.'
 	}
 }
 
-console.log(throwParty());
+console.log(throwParty(canDrink));
 
 
